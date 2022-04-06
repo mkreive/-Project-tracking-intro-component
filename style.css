@@ -8,6 +8,16 @@
     --font-body-size: 112.5%;
     --font-weight-light: 400;
     --font-weight-heavy: 700;
+    --font-family-body: "Barlow", sans-serif;
+    --font-family-headers-etc: "Barlow Condensed", sans-serif;
+
+    /* @mixin clearfix {
+        &::after {
+            content:"";
+            clear: both;
+            display: table;
+        }
+    } */
 }
 
 /* CLEANUP */
@@ -26,16 +36,18 @@ body {
 }
 
 body {
+    display: grid;
+    height: 100vh;
+    min-height: 100vh;
+    background-color: white;
     box-sizing: border-box;
+    font-family: var(--font-family-body);
     font-size: 62.5%;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
 
 img,
-picture,
-video,
-canvas,
 svg {
     display: block;
     max-width: 100%;
@@ -48,17 +60,19 @@ select {
     font: inherit;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word;
+/* MAIN BLOCKS */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 5rem;
 }
+.navigation {
+    width: 100%;
+    /* &-logo {
 
-#root,
-#__next {
-    isolation: isolate;
+    }
+    &-bar {
+
+    } */
 }
