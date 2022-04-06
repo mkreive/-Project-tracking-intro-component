@@ -1,0 +1,51 @@
+/* VARIABLES */
+/* CLEANUP */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+/* UNIVERSAL SETTERS */
+html,
+body {
+  height: 100%; }
+
+body {
+  display: grid;
+  height: 100vh;
+  min-height: 100vh;
+  background-color: white;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+  font-size: 62.5%;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; }
+
+img,
+svg {
+  display: block;
+  max-width: 100%; }
+
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* MAIN BLOCKS */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 5rem; }
+
+.navigation {
+  width: 100%;
+  /* &-logo {
+
+    }
+    &-bar {
+
+    } */ }
