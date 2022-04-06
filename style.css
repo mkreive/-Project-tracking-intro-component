@@ -1,0 +1,60 @@
+/* VARIABLES */
+:root {
+    --color-primary: hsl(172, 67%, 45%);
+    --colort-text: hsl(172, 67%, 45%);
+}
+
+/* CLEANUP */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* UNIVERSAL SETTERS */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
