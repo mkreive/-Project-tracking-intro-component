@@ -27,7 +27,7 @@ Users should be able to:
 ### Built with
 
 -   Semantic HTML5 markup
--   Less
+-   Sass
 -   Vanilla JavaScript
 
 ## Author
