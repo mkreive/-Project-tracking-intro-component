@@ -1,7 +1,10 @@
 /* VARIABLES */
 :root {
-    --color-primary: hsl(172, 67%, 45%);
-    --colort-text: hsl(172, 67%, 45%);
+    --color-primary-red: hsl(0, 100%, 68%);
+    --colort-neutral-very-dark-blue: hsl(230, 29%, 20%);
+    --colort-neutral-dark-graysh-blue: hsl(230, 11%, 40%);
+    --colort-neutral-graysh-blue: hsl(231, 7%, 65%);
+    --colort-neutral-light-grayish-blue: hsl(207, 33%, 95%);
 }
 
 /* CLEANUP */
@@ -23,6 +26,7 @@ body {
     box-sizing: border-box;
     font-size: 62.5%;
     line-height: 1.5;
+    font-family: "Barlow Condensed", sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -51,9 +55,7 @@ h5,
 h6 {
     overflow-wrap: break-word;
 }
-/*
-    9. Create a root stacking context
-  */
+
 #root,
 #__next {
     isolation: isolate;
