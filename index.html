@@ -22,34 +22,68 @@
         <title>Frontend Mentor | Project tracking intro component</title>
     </head>
     <body>
-        <div class="wrapper">
-            <div class="navigation">
-                <div class="navigation-logo"></div>
-                <nav class="navigation-bar">
-                    <ul>
-                        <li>Product</li>
-                        <li>Features</li>
-                        <li>Pricing</li>
-                        <li>Login</li>
+        <div class="container">
+            <header class="header">
+                <nav class="nav">
+                    <img
+                        src="https://res.cloudinary.com/kreiva/image/upload/v1649236265/FrontendMentor/logo_oaflcb.svg"
+                        alt="logo"
+                        class="nav__logo"
+                    />
+                    <ul class="nav__links">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#section--1">Product</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#section--2">Features</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#section--3">Pricing</a>
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                class="nav__link nav__link--btn btn--show-modal"
+                                href="#"
+                                >Login</a
+                            >
+                        </li>
                     </ul>
                 </nav>
-            </div>
-            <div class="main">
-                <div class="main__left">
-                    <h2 class="header-small">New Monograph Dashboard</h2>
-                    <h1 class="header-big">Powerful insights into your team</h1>
-                    <div class="text">
+
+                <div class="header__title">
+                    <h3 class="heading-3">New Monograph Dashboard</h3>
+                    <h1 class="heading-1">Powerful insights into your team</h1>
+                    <div class="header__slogan">
                         Project planning and time tracking for agile teams
                     </div>
                     <div class="button__field">
-                        <button class="button">Schedule a demo</button>
+                        <button class="btn">Schedule a demo</button>
                         <div>to see a live preview</div>
                     </div>
                 </div>
-                <div class="main__right">
-                    <img class="image"></img>
+                <div class="header__img">
+                    <img
+                        src="https://res.cloudinary.com/kreiva/image/upload/v1649236265/FrontendMentor/illustration-devices_pfkdxe.svg"
+                        alt="mobile and computer image"
+                        class="background"
+                    />
                 </div>
+            </header>
+
+            <div class="modal hidden">
+                <button class="btn--close-modal">&times;</button>
+                <h2 class="modal__header">Login</h2>
+                <form class="modal__form">
+                    <label>First Name</label>
+                    <input type="text" />
+                    <label>Last Name</label>
+                    <input type="text" />
+                    <label>Email Address</label>
+                    <input type="email" />
+                    <button class="btn">Login &rarr;</button>
+                </form>
             </div>
+            <div class="overlay hidden"></div>
         </div>
     </body>
 </html>

@@ -35,7 +35,7 @@ select {
   font: inherit; }
 
 /* MAIN BLOCKS */
-.wrapper {
+.container {
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -45,9 +45,7 @@ select {
   width: 100%;
   display: flex;
   justify-content: space-between; }
-  .navigation-logo {
-    background-image: url(https://res.cloudinary.com/kreiva/image/upload/v1649236265/FrontendMentor/logo_oaflcb.svg);
-    background-repeat: no-repeat;
+  .navigation__logo {
     width: 100px; }
-  .navigation-bar {
+  .navigation__bar {
     width: 50%; }
