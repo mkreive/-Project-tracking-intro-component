@@ -1,9 +1,10 @@
 /* VARIABLES */
 $color-primary-red: hsl(0, 100%, 68%);
-$colort-neutral-very-dark-blue: hsl(230, 29%, 20%);
-$colort-neutral-dark-grayish-blue: hsl(230, 11%, 40%);
-$colort-neutral-grayish-blue: hsl(231, 7%, 65%);
-$colort-neutral-light-grayish-blue: hsl(207, 33%, 95%);
+$color-neutral-very-dark-blue: hsl(230, 29%, 20%);
+$color-neutral-dark-grayish-blue: hsl(230, 11%, 40%);
+$color-neutral-grayish-blue: hsl(231, 7%, 65%);
+$color-neutral-light-grayish-blue: hsl(207, 33%, 95%);
+$font-size-header: 180%;
 $font-body-size: 112.5%;
 $font-weight-light: 400;
 $font-weight-heavy: 700;
@@ -52,21 +53,73 @@ select {
 
 /* MAIN BLOCKS */
 .container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     width: 100vw;
-    padding: 5rem 15rem;
+    padding: 5rem 13rem;
 }
 
-.navigation {
-    width: 100%;
+.nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    width: 100%;
+    z-index: 99;
 
     &__logo {
-        width: 100px;
+        width: auto;
     }
-    &__bar {
-        width: 50%;
+    &__links {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+    &__item {
+        margin-left: 3rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+        display: block;
+        transition: all 0.2s;
+        font-family: $font-family-headers-etc;
+        font-size: $font-size-header;
+        font-weight: $font-weight-heavy;
+        color: $color-neutral-very-dark-blue;
+        line-height: 1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover,
+        &:active {
+            border-bottom: 2px solid $color-neutral-dark-grayish-blue;
+        }
+    }
+    &__link--login:link,
+    &__link--login:visited {
+        color: $color-neutral-grayish-blue;
+
+        &:hover,
+        &:active {
+            border-bottom: 2px solid $color-neutral-grayish-blue;
+        }
+    }
+}
+.dot {
+    font-size: 2rem;
+    color: $color-neutral-grayish-blue;
+}
+
+.header {
+    &__background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        background-color: $color-neutral-light-grayish-blue;
+        background-color: red;
+        border-radius: 5rem;
+        width: 50vw;
+        height: 30%;
     }
 }
