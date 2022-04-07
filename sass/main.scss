@@ -4,8 +4,8 @@ $color-neutral-very-dark-blue: hsl(230, 29%, 20%);
 $color-neutral-dark-grayish-blue: hsl(230, 11%, 40%);
 $color-neutral-grayish-blue: hsl(231, 7%, 65%);
 $color-neutral-light-grayish-blue: hsl(207, 33%, 95%);
-$font-size-header: 180%;
-$font-body-size: 113%;
+$font-size-header-1: 400%;
+$font-size-buttons: 180%;
 $font-size-medium: 125%;
 $font-weight-light: 400;
 $font-weight-heavy: 700;
@@ -85,7 +85,7 @@ select {
         display: block;
         transition: all 0.2s;
         font-family: $font-family-headers-etc;
-        font-size: $font-size-header;
+        font-size: $font-size-buttons;
         font-weight: $font-weight-heavy;
         color: $color-neutral-very-dark-blue;
         line-height: 1rem;
@@ -117,7 +117,7 @@ select {
         width: 45%;
         margin: 9rem 0;
         font-family: $font-family-headers-etc;
-        font-size: $font-size-header;
+        font-size: $font-size-buttons;
         text-transform: uppercase;
 
         &-text {
@@ -160,19 +160,20 @@ select {
     &-3 {
         font-weight: $font-weight-light;
         color: $color-neutral-grayish-blue;
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.15rem;
         margin-bottom: $margin-bottom;
     }
     &-2 {
-        font-weight: $font-weight-heavy;
-        font-size: $font-size-header;
+        font-family: $font-family-headers-etc;
+        font-weight: 700;
+        font-size: $font-size-header-1;
         color: $color-neutral-very-dark-blue;
         text-transform: uppercase;
         margin-bottom: $margin-bottom;
     }
     &-1 {
         color: $color-neutral-very-dark-blue;
-        font-size: 450%;
+        font-size: $font-size-header-1;
         line-height: 5rem;
         margin-bottom: $margin-bottom;
     }
@@ -197,10 +198,19 @@ select {
     text-transform: uppercase;
     font-size: $font-size-medium;
     margin-right: 2rem;
+    cursor: pointer;
 
-    &--close-modal {
-        width: 1rem;
-        height: 1rem;
+    &-login,
+    &-shedule {
+        width: 100%;
+        margin-top: $margin-bottom;
+        font-family: $font-family-headers-etc;
+        font-size: $font-size-buttons;
+        font-weight: $font-weight-heavy;
+    }
+
+    &:hover {
+        background-color: lighten($color-primary-red, $amount: 7);
     }
 }
 
@@ -214,7 +224,7 @@ select {
     width: 30vw;
     max-width: 70%;
     background-color: $color-neutral-light-grayish-blue;
-    padding: 5rem 6rem;
+    padding: 4rem 5rem;
     box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
     z-index: 1000;
     transition: all 0.5s;
@@ -228,13 +238,22 @@ select {
             font-family: $font-family-body;
             text-transform: uppercase;
             color: $color-neutral-grayish-blue;
+            margin-bottom: 0.3rem;
         }
 
         & input {
-            border: none;
+            font-size: $font-size-medium;
+            font-family: inherit;
+            border: 2px solid white;
             margin-bottom: 1rem;
             border-radius: 0.5rem;
-            padding: 0.6rem 3rem;
+            padding: 0.6rem 1rem;
+            cursor: pointer;
+            outline: none;
+
+            &:focus {
+                border: 2px solid $color-primary-red;
+            }
         }
     }
 }
@@ -250,7 +269,7 @@ select {
     z-index: 100;
     transition: all 0.5s;
 }
-// .hidden {
-//     visibility: hidden;
-//     opacity: 0;
-// }
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
