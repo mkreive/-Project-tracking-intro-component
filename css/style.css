@@ -77,7 +77,21 @@ select {
   color: #a0a1ac; }
 
 .header__title {
-  color: red; }
+  width: 45%;
+  margin: 11rem 0;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 180%;
+  text-transform: uppercase; }
+  .header__title-text {
+    font-family: "Barlow", sans-serif;
+    color: #5b5f71;
+    text-transform: none;
+    font-size: 130%;
+    width: 55%;
+    line-height: 1.8rem;
+    margin-bottom: 2.2rem; }
+  .header__title-button {
+    color: red; }
 
 .header__img {
   position: absolute;
@@ -95,3 +109,24 @@ select {
   border-bottom-left-radius: 5rem;
   width: 43vw;
   height: 54%; }
+
+.heading-3 {
+  font-weight: 400;
+  color: #a0a1ac;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2.2rem; }
+
+.heading-1 {
+  color: #242942;
+  font-size: 450%;
+  line-height: 5rem;
+  margin-bottom: 2.2rem; }
+
+.highlited {
+  color: white;
+  font-weight: 700;
+  background-color: #242942;
+  border-radius: 1rem;
+  letter-spacing: normal;
+  padding: 0.2rem 0.9rem;
+  margin-right: 1rem; }

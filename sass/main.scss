@@ -10,6 +10,7 @@ $font-weight-light: 400;
 $font-weight-heavy: 700;
 $font-family-body: "Barlow", sans-serif;
 $font-family-headers-etc: "Barlow Condensed", sans-serif;
+$margin-bottom: 2.2rem;
 
 /* CLEANUP */
 *,
@@ -112,8 +113,26 @@ select {
 
 .header {
     &__title {
-        color: red;
+        width: 45%;
+        margin: 11rem 0;
+        font-family: $font-family-headers-etc;
+        font-size: $font-size-header;
+        text-transform: uppercase;
+
+        &-text {
+            font-family: $font-family-body;
+            color: $color-neutral-dark-grayish-blue;
+            text-transform: none;
+            font-size: 130%;
+            width: 55%;
+            line-height: 1.8rem;
+            margin-bottom: $margin-bottom;
+        }
+        &-button {
+            color: red;
+        }
     }
+
     &__img {
         position: absolute;
         display: block;
@@ -132,4 +151,29 @@ select {
         width: 43vw;
         height: 54%;
     }
+}
+
+.heading {
+    &-3 {
+        font-weight: $font-weight-light;
+        color: $color-neutral-grayish-blue;
+        letter-spacing: 0.2rem;
+        margin-bottom: $margin-bottom;
+    }
+    &-1 {
+        color: $color-neutral-very-dark-blue;
+        font-size: 450%;
+        line-height: 5rem;
+        margin-bottom: $margin-bottom;
+    }
+}
+
+.highlited {
+    color: white;
+    font-weight: $font-weight-heavy;
+    background-color: $color-neutral-very-dark-blue;
+    border-radius: 1rem;
+    letter-spacing: normal;
+    padding: 0.2rem 0.9rem;
+    margin-right: 1rem;
 }
