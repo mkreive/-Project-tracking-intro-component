@@ -55,7 +55,7 @@ select {
 .container {
     display: grid;
     width: 100vw;
-    padding: 5rem 13rem;
+    padding: 5rem 11rem;
 }
 
 .nav {
@@ -64,7 +64,6 @@ select {
     align-items: center;
     height: 7vh;
     width: 100%;
-    z-index: 99;
 
     &__logo {
         width: auto;
@@ -73,6 +72,7 @@ select {
         display: flex;
         align-items: center;
         list-style: none;
+        z-index: 99;
     }
     &__item {
         margin-left: 3rem;
@@ -111,15 +111,25 @@ select {
 }
 
 .header {
+    &__title {
+        color: red;
+    }
+    &__img {
+        position: absolute;
+        display: block;
+        top: 27vh;
+        right: -13vw;
+        z-index: 5;
+    }
+
     &__background {
         position: absolute;
         top: 0;
         right: 0;
         z-index: 1;
         background-color: $color-neutral-light-grayish-blue;
-        background-color: red;
-        border-radius: 5rem;
-        width: 50vw;
-        height: 30%;
+        border-bottom-left-radius: 5rem;
+        width: 43vw;
+        height: 54%;
     }
 }

@@ -38,21 +38,21 @@ select {
 .container {
   display: grid;
   width: 100vw;
-  padding: 5rem 13rem; }
+  padding: 5rem 11rem; }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 7vh;
-  width: 100%;
-  z-index: 99; }
+  width: 100%; }
   .nav__logo {
     width: auto; }
   .nav__links {
     display: flex;
     align-items: center;
-    list-style: none; }
+    list-style: none;
+    z-index: 99; }
   .nav__item {
     margin-left: 3rem; }
   .nav__link:link, .nav__link:visited {
@@ -76,13 +76,22 @@ select {
   font-size: 2rem;
   color: #a0a1ac; }
 
+.header__title {
+  color: red; }
+
+.header__img {
+  position: absolute;
+  display: block;
+  top: 27vh;
+  right: -13vw;
+  z-index: 5; }
+
 .header__background {
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
   background-color: #eef3f6;
-  background-color: red;
-  border-radius: 5rem;
-  width: 50vw;
-  height: 30%; }
+  border-bottom-left-radius: 5rem;
+  width: 43vw;
+  height: 54%; }
