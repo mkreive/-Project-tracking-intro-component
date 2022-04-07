@@ -38,7 +38,7 @@ select {
 .container {
   display: grid;
   width: 100vw;
-  padding: 5rem 11rem; }
+  padding: 4rem 11rem; }
 
 .nav {
   display: flex;
@@ -78,7 +78,7 @@ select {
 
 .header__title {
   width: 45%;
-  margin: 11rem 0;
+  margin: 9rem 0;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 180%;
   text-transform: uppercase; }
@@ -86,12 +86,14 @@ select {
     font-family: "Barlow", sans-serif;
     color: #5b5f71;
     text-transform: none;
-    font-size: 130%;
+    font-size: 125%;
     width: 55%;
     line-height: 1.8rem;
-    margin-bottom: 2.2rem; }
+    margin-bottom: 2rem; }
   .header__title-button {
-    color: red; }
+    margin-top: 4rem;
+    display: flex;
+    align-items: baseline; }
 
 .header__img {
   position: absolute;
@@ -114,13 +116,13 @@ select {
   font-weight: 400;
   color: #a0a1ac;
   letter-spacing: 0.2rem;
-  margin-bottom: 2.2rem; }
+  margin-bottom: 2rem; }
 
 .heading-1 {
   color: #242942;
   font-size: 450%;
   line-height: 5rem;
-  margin-bottom: 2.2rem; }
+  margin-bottom: 2rem; }
 
 .highlited {
   color: white;
@@ -130,3 +132,14 @@ select {
   letter-spacing: normal;
   padding: 0.2rem 0.9rem;
   margin-right: 1rem; }
+
+.btn {
+  background-color: #ff5c5c;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.6rem 3rem;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 125%;
+  margin-right: 2rem; }
