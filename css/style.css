@@ -76,41 +76,42 @@ select {
   font-size: 2rem;
   color: #a0a1ac; }
 
-.header__title {
-  width: 45%;
-  margin: 9rem 0;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 180%;
-  text-transform: uppercase; }
-  .header__title-text {
-    font-family: "Barlow", sans-serif;
-    color: #5b5f71;
-    text-transform: none;
-    font-size: 125%;
-    width: 55%;
-    line-height: 1.8rem;
-    margin-bottom: 2rem; }
-  .header__title-button {
-    margin-top: 4rem;
-    display: flex;
-    align-items: baseline; }
-
-.header__img {
-  position: absolute;
-  display: block;
-  top: 27vh;
-  right: -13vw;
-  z-index: 5; }
-
-.header__background {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  background-color: #eef3f6;
-  border-bottom-left-radius: 5rem;
-  width: 43vw;
-  height: 54%; }
+.header {
+  width: 100%; }
+  .header__title {
+    width: 45%;
+    margin: 9rem 0;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 180%;
+    text-transform: uppercase; }
+    .header__title-text {
+      font-family: "Barlow", sans-serif;
+      color: #5b5f71;
+      text-transform: none;
+      font-size: 125%;
+      width: 55%;
+      line-height: 1.8rem;
+      margin-bottom: 2rem; }
+    .header__title-button {
+      margin-top: 4rem;
+      display: flex;
+      align-items: baseline; }
+  .header__img,
+  .header .img__photo {
+    width: 65vw;
+    position: absolute;
+    z-index: 5;
+    top: 25%;
+    left: 33%; }
+  .header__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #eef3f6;
+    border-bottom-left-radius: 5rem;
+    width: 48vw;
+    height: 56%; }
 
 .heading-3 {
   font-weight: 400;
