@@ -356,6 +356,8 @@ select {
     color: #a0a1ac; }
     .nav__link--login:link:hover, .nav__link--login:link:active, .nav__link--login:visited:hover, .nav__link--login:visited:active {
       border-bottom: 2px solid #a0a1ac; }
+  .solid {
+    border-top: 3px solid #a0a1ac; }
   .dot {
     visibility: hidden; }
   .header {

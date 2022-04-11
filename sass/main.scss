@@ -495,7 +495,6 @@ select {
         &__link:visited {
             display: block;
             transition: all 0.2s;
-
             line-height: 1.5rem;
             text-decoration: none;
             text-transform: uppercase;
@@ -515,7 +514,9 @@ select {
             }
         }
     }
-
+    .solid {
+        border-top: 3px solid $color-neutral-grayish-blue;
+    }
     .dot {
         visibility: hidden;
     }
