@@ -8,6 +8,13 @@ const sheduleForm = document.querySelector(".shedule");
 const btnsOpenModal = document.querySelectorAll(".btn--show-modal");
 const overlay = document.querySelector(".overlay");
 const modal = document.querySelector(".modal");
+const navigationElement = document.querySelector(".nav__button");
+const navLinksEl = document.querySelector(".nav__links");
+
+window.onresize = function () {
+    if (window.innerWidth <= 560) navLinksEl.classList.add("hidden");
+    else navLinksEl.classList.remove("hidden");
+};
 
 let openedModal;
 const openModal = function (modal) {
@@ -33,4 +40,8 @@ btnsOpenModal.forEach((btn) => {
 
 overlay.addEventListener("click", function (e) {
     closeModal(openedModal);
+});
+
+navigationElement.addEventListener("click", function () {
+    navLinksEl.classList.toggle("hidden");
 });

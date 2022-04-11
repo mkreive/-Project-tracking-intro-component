@@ -321,9 +321,9 @@ select {
 
 @media (max-width: 560px) {
   body {
-    font-size: 50%; }
+    font-size: 45%; }
   .container {
-    padding: 3rem; }
+    padding: 2.5rem; }
   .nav__button {
     visibility: visible; }
   .nav__links {
@@ -332,8 +332,8 @@ select {
     flex-direction: column;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 85vw;
+    transform: translate(-50%, -40%);
+    width: 81vw;
     max-width: 90%;
     background-color: white;
     padding: 3rem 4rem;
@@ -343,7 +343,7 @@ select {
     font-size: 180%; }
   .nav__item {
     margin-left: 0;
-    margin-bottom: 2rem; }
+    margin-bottom: 1.5rem; }
   .nav__link:link, .nav__link:visited {
     display: block;
     transition: all 0.2s;
@@ -357,9 +357,12 @@ select {
     .nav__link--login:link:hover, .nav__link--login:link:active, .nav__link--login:visited:hover, .nav__link--login:visited:active {
       border-bottom: 2px solid #a0a1ac; }
   .solid {
-    border-top: 3px solid #a0a1ac; }
+    width: 100%;
+    border-top: 1px solid #eef3f6; }
   .dot {
-    visibility: hidden; }
+    visibility: hidden;
+    opacity: 0;
+    position: absolute; }
   .header {
     display: flex;
     flex-direction: column;
@@ -372,7 +375,7 @@ select {
       margin: 3rem 0; }
       .header__title-text {
         width: 100%;
-        line-height: 1.3rem; }
+        line-height: 1.2rem; }
     .header__img,
     .header .img__photo {
       width: 120vw;
@@ -383,10 +386,10 @@ select {
   .heading-3 {
     letter-spacing: 0.1rem; }
   .heading-1 {
-    line-height: 3.5rem; }
+    line-height: 3rem; }
   .modal {
     width: 90vw;
-    padding: 3rem 4rem;
+    padding: 2rem 2rem;
     box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
     z-index: 1000;
     transition: all 0.5s; }
@@ -398,7 +401,7 @@ select {
         font-family: "Barlow", sans-serif;
         text-transform: uppercase;
         color: #a0a1ac;
-        margin-bottom: 0.3rem; }
+        margin-bottom: 0.2rem; }
       .modal__form input {
         font-size: 125%;
         font-family: inherit;
